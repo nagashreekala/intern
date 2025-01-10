@@ -10,6 +10,7 @@ This project implements an attendance management system using face recognition t
 
 #### **Introduction**
 The manual process of recording attendance can be time-consuming and prone to errors. This project leverages artificial intelligence and computer vision to automate attendance recording. The system uses a face recognition model trained via Google Teachable Machine and integrates it with a MySQL database to maintain accurate attendance records.
+![image](https://github.com/user-attachments/assets/f95f1507-0749-4c40-ba9c-4a31e08216d1)
 
 ---
 

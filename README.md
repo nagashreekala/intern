@@ -1,4 +1,3 @@
-Here's a project report based on the uploaded code for a face recognition-based attendance system. Let me know if you'd like any adjustments or additional sections.
 
 ---
 
@@ -68,6 +67,7 @@ The system successfully:
 1. Recognizes individuals with high confidence.
 2. Records attendance in the database.
 3. Provides a user-friendly interface for real-time feedback.
+![image](https://github.com/user-attachments/assets/734eb784-fe2d-4e19-acce-3caabcb595fb)
 
 ---
 

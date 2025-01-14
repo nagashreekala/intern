@@ -11,7 +11,7 @@ The goal is to implement a face recognition system that uses a pre-trained model
 - Detect faces in real-time using a webcam.
 - Classify detected faces based on pre-trained labels.
 - Provide confidence scores for predictions.
-- ![image](https://github.com/user-attachments/assets/c57b983a-bd10-4e67-8d3d-d768534783d5
+- ![image](https://github.com/user-attachments/assets/c57b983a-bd10-4e67-8d3d-d768534783d5)
 
 
 #### 3. **System Overview**

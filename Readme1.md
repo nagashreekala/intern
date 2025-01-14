@@ -75,24 +75,12 @@ The MySQL database has a table named `attendance` with the following schema:
 
 ### Results
 The system successfully identifies individuals in real-time and records their attendance. Below are example output images from the system:
+![image](https://github.com/user-attachments/assets/77dcba87-c94b-4405-8933-a702047c7888)
+
+![Screenshot 2025-01-14 212131](https://github.com/user-attachments/assets/69a86ae0-9526-44f9-8ab4-e043dadb9375)
 
 
 ### Conclusion
 This face recognition attendance system demonstrates the potential of combining deep learning, image processing, and database management for automating routine tasks. The implementation is scalable and can be extended to larger datasets and multi-camera setups.
 
-### Appendix
-#### Code Images
-Below are snippets of the implementation code:
-
-- **Model Loading**:
-![Model Loading Code](path/to/model_loading_image.png)
-
-- **Camera Integration**:
-![Camera Integration Code](path/to/camera_integration_image.png)
-
-- **Attendance Recording**:
-- ![image](https://github.com/user-attachments/assets/77dcba87-c94b-4405-8933-a702047c7888)
-
-![Attendance Recording Code](path/to/attendance_recording_image.png)
-![Screenshot 2025-01-14 212131](https://github.com/user-attachments/assets/69a86ae0-9526-44f9-8ab4-e043dadb9375)
 

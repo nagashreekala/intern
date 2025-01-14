@@ -57,9 +57,9 @@ Attendance is recorded in a MySQL database. When a face is recognized with a con
 ```python
 def record_attendance(name):
     try:
-        c.execute("SELECT * FROM attendance WHERE name = %s", (name,))
+        c.execute("SELECT * FROM attendance1 WHERE name = %s", (name,))
         if not c.fetchone():
-            c.execute("INSERT INTO attendance (name, status) VALUES (%s, %s)", (name, 'present'))
+            c.execute("INSERT INTO attendance1 (name, status) VALUES (%s, %s)", (name, 'present'))
             conn.commit()
             print(f"Attendance marked for {name}")
         else:
@@ -91,4 +91,8 @@ Below are snippets of the implementation code:
 ![Camera Integration Code](path/to/camera_integration_image.png)
 
 - **Attendance Recording**:
+- ![image](https://github.com/user-attachments/assets/77dcba87-c94b-4405-8933-a702047c7888)
+
 ![Attendance Recording Code](path/to/attendance_recording_image.png)
+![Screenshot 2025-01-14 212131](https://github.com/user-attachments/assets/69a86ae0-9526-44f9-8ab4-e043dadb9375)
+

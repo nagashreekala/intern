@@ -1,72 +1,81 @@
-**Project Report: Face Recognition Application Using TensorFlow and OpenCV**
+### Project Report: Face Recognition Using Teachable Machine and Python
 
-### 1. **Introduction**
-Face recognition technology has become an essential component of modern computer vision systems, with applications ranging from security systems to personalized user experiences. This project involves the development of a face recognition application using a pre-trained deep learning model integrated with OpenCV for real-time image capture and processing.
-
-### 2. **Objective**
-The primary objectives of this project are:
-- To implement a face recognition application using a pre-trained model.
-- To utilize TensorFlow and OpenCV for model inference and webcam integration.
-- To classify images captured in real-time and provide accurate predictions.
-
-### 3. **Tools and Technologies**
-- **Programming Language:** Python
-- **Libraries and Frameworks:**
-  - TensorFlow/Keras for loading and predicting with the pre-trained model.
-  - OpenCV for real-time webcam integration and image preprocessing.
-  - NumPy for numerical computations.
-- **Hardware:** GPU support (optional) for accelerated inference.
-
-### 4. **Methodology**
-
-#### 4.1 Model Loading
-The application uses a pre-trained model, `face_recog.h5`, which is loaded using Keras’ `load_model` function. The model is set to `compile=False` to skip recompilation during loading.
-
-#### 4.2 Class Labels
-Class labels are loaded from a text file, `labels.txt`, where each line corresponds to a class the model can predict. The labels are used to interpret the output of the model.
-
-#### 4.3 Webcam Integration
-- The application initializes the webcam using OpenCV’s `VideoCapture` class.
-- The webcam feed is displayed in real-time using OpenCV’s `imshow` function.
-- Users can exit the application by pressing the `Esc` key.
-
-#### 4.4 Image Preprocessing
-- Captured frames are resized to 224x224 pixels to match the model’s input dimensions.
-- Images are normalized to the range [-1, 1] for compatibility with the pre-trained model.
-
-#### 4.5 Prediction and Output
-- The model predicts the class of the preprocessed image, returning a confidence score.
-- The class with the highest probability is displayed along with its confidence level.
-
-### 5. **Challenges and Solutions**
-1. **Error Handling:**
-   - Ensured robust error handling for missing files (`face_recog.h5` or `labels.txt`).
-   - Added exceptions for issues during webcam initialization and image processing.
-2. **Compatibility:**
-   - Included an option to force TensorFlow to run on CPU in case GPU support is unavailable.
-3. **User Feedback:**
-   - Provided real-time feedback on predictions and confidence scores.
-
-### 6. **Results**
-The application successfully:
-- Captures real-time images from the webcam.
-- Preprocesses the images and predicts their class using the pre-trained model.
-- Displays the class name and confidence score in the console output.
-
-### 7. **Future Scope**
-1. **Enhancements to the Model:**
-   - Fine-tune the pre-trained model on a larger dataset to improve accuracy.
-2. **Web Interface:**
-   - Develop a user-friendly graphical interface using Streamlit or Flask.
-3. **Deployment:**
-   - Deploy the application on cloud platforms for remote accessibility.
-4. **Advanced Features:**
-   - Add multi-face detection and recognition capabilities.
-
-### 8. **Conclusion**
-This project demonstrates the integration of deep learning and computer vision for real-time face recognition. With additional enhancements, this application can serve as a foundation for more advanced and scalable solutions.
-
----
+#### 1. **Introduction**
+This project leverages Google Teachable Machine's capabilities to create a face recognition system. The trained model is integrated with a Python application, enabling real-time face detection and classification using a webcam.
+![image](https://github.com/user-attachments/assets/038d5dd8-40bd-4fc2-9411-9a56fbcc626c)
 
 
 
+#### 2. **Objective**
+The goal is to implement a face recognition system that uses a pre-trained model from Google Teachable Machine. The system should:
+- Detect faces in real-time using a webcam.
+- Classify detected faces based on pre-trained labels.
+- Provide confidence scores for predictions.
+- ![image](https://github.com/user-attachments/assets/c57b983a-bd10-4e67-8d3d-d768534783d5
+
+
+#### 3. **System Overview**
+The project uses the following technologies:
+- **Google Teachable Machine**: For model training and exporting.
+- **Python**: For application logic and integration.
+- **Keras and TensorFlow**: For loading and using the pre-trained model.
+- **OpenCV**: For real-time image capture and processing.
+- ![image](https://github.com/user-attachments/assets/d72cca69-dbbd-4c14-88ba-147af717630d)
+
+
+#### 4. **Requirements**
+- Python 3.x
+- TensorFlow and Keras libraries
+- OpenCV for image processing
+- Trained model file (`face_recog.h5`)
+- Class labels file (`labels.txt`)
+- A webcam for real-time face detection
+- ![image](https://github.com/user-attachments/assets/fca04fd1-cd51-48e9-ab93-a804b8be59e7)
+
+
+#### 5. **Code Implementation**
+Key features of the provided Python script:
+1. **Model Loading**: 
+   - Loads the `face_recog.h5` model.
+   - ![image](https://github.com/user-attachments/assets/b2cadc17-c4cf-41d8-a982-bd3480e25c46)
+
+   - Reads class labels from `labels.txt`.
+   - ![image](https://github.com/user-attachments/assets/efef4ae3-c201-4c6c-8d00-9b3f2cd280bb)
+
+2. **Webcam Initialization**: 
+   - Captures real-time video feed from a connected webcam.
+3. **Image Preprocessing**:
+   - Resizes frames to 224x224 pixels.
+   - Normalizes pixel values.
+   - ![image](https://github.com/user-attachments/assets/7513f818-5db6-4139-b9fb-f77ec1048883)
+
+4. **Prediction**:
+   - Makes predictions using the loaded model.
+   - Displays the predicted class and confidence score.
+5. **User Interaction**:
+   - Displays live feed with predictions.
+   - Allows exiting with the 'Esc' key.
+   - ![image](https://github.com/user-attachments/assets/084bb496-a441-432b-8104-83732ebea2ec)
+
+
+#### 6. **Results**
+The system successfully:
+- Detects faces in real-time.
+- Classifies them into predefined categories with confidence scores.
+- Demonstrates efficient real-time performance.
+- ![Screenshot 2025-01-10 110738](https://github.com/user-attachments/assets/e07db1c7-35de-4680-8db0-4dcd3ec9b68d)
+
+
+#### 7. **Challenges**
+- Dependency on proper lighting for accurate detection.
+- High confidence scores may require balanced training data.
+
+#### 8. **Conclusion**
+The project illustrates the practical application of Google Teachable Machine models in Python for real-time face recognition. Future enhancements could include:
+- Improved UI for better user interaction.
+- Integration with additional datasets for broader classification capabilities.
+
+#### 9. **References**
+- Google Teachable Machine documentation
+- TensorFlow and OpenCV libraries
+![image](https://github.com/user-attachments/assets/ab3d9ed1-c756-4a7b-af77-b421834177c4)
